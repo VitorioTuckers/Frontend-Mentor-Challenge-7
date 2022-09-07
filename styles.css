@@ -1,0 +1,127 @@
+:root {
+  --primary-clr-1: hsl(185, 75%, 39%);
+  --primary-clr-2: hsl(229, 23%, 23%);
+  --primary-clr-3: hsl(227, 10%, 46%);
+  --neutral-clr-1: hsla(0, 0%, 59%, 0.404);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-clr-1);
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -150px -500px,950px 520px;
+  background-size: 1100px, 1100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-img {   
+  width: 120px;
+  height: 120px;
+  align-self: center;
+  border-radius: 50%;
+  margin-top: -3.55rem;
+  margin-bottom: 0.5rem;
+  border: solid 6px hsl(0, 0%, 100%);
+}
+
+.spacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+  margin: 0.7rem;
+}
+
+.name,
+.age {
+  font-size: 1.25rem;
+}
+
+.name,
+.numbers {
+  color: var(--primary-clr-2);
+}
+
+.age,
+.city {
+  color: var(--primary-clr-3);
+}
+
+.city {
+  font-size: 0.95rem;
+  align-self: center;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  display: flex;
+  justify-content: space-around;
+  border-top: solid 0.1px var(--neutral-clr-1);
+  padding: 1.5rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.25rem;
+  margin: 0 2rem;
+}
+
+.numbers {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.text {
+  color: var(--primary-clr-3);
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 500px) {
+
+  .card {
+    min-width: 330px;
+    margin: 1rem;
+  }
+
+  .box {
+    margin: 0;
+  }
+}
+
