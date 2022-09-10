@@ -25,8 +25,7 @@ body {
   background-color: var(--primary-clr-1);
   background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: -150px -500px,950px 520px;
-  background-size: 1100px, 1100px;
+  background-position: right 52vw bottom 42vh, left 47vw top 51vh;
 }
 
 .card {
@@ -116,7 +115,8 @@ body {
 @media screen and (max-width: 500px) {
 
   .card {
-    min-width: 330px;
+    min-width: 280px;
+    max-width: 350px;
     margin: 1rem;
   }
 
